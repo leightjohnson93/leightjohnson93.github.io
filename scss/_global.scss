@@ -23,7 +23,7 @@ a {
   color: $primary;
   @include transition-all;
   &:hover {
-    color: darken($primary, .1);
+    color: darken($primary, 0.1);
   }
 }
 
@@ -45,7 +45,13 @@ h6 {
 }
 
 .text-faded {
-  color: fade-out($white, .3);
+  color: fade-out($white, 0.3);
+}
+
+.text-faded.mb-5 {
+  text-shadow: 1px 1px 0px black;
+  color: fade-out($white, 0.1);
+  font-weight: 500;
 }
 
 section {

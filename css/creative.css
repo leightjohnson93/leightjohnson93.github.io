@@ -55,6 +55,12 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.text-faded.mb-5 {
+  text-shadow: 1px 1px 0px black;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
 section {
   padding: 8rem 0;
 }
@@ -101,7 +107,7 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
-  color: #F05F40;
+  color: #000;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -111,7 +117,7 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #212529;
@@ -136,7 +142,7 @@ img::-moz-selection {
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.8);
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -178,7 +184,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/IMG_0274.jpg");
   background-position: center center;
   background-size: cover;
 }
