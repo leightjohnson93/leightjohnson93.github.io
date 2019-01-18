@@ -1,5 +1,6 @@
 // Styling for the portfolio section
 .portfolio-box {
+  border: 1px solid $primary;
   position: relative;
   display: block;
   max-width: 650px;
@@ -13,7 +14,7 @@
     text-align: center;
     opacity: 0;
     color: $white;
-    background: fade-out($primary, .1);
+    background: fade-out($primary, 0.1);
     @include transition-all;
     .portfolio-box-caption-content {
       position: absolute;
@@ -23,7 +24,6 @@
       text-align: center;
       .project-category,
       .project-name {
-        padding: 0 15px;
         @include sans-serif-font;
       }
       .project-category {
