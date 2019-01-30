@@ -230,6 +230,35 @@ header.masthead p {
   max-width: 400px;
 }
 
+.popup-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0 30px 30px;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: stretch;
+  -ms-flex-pack: stretch;
+  justify-content: stretch;
+}
+
+.project p {
+  text-align: justify;
+}
+
 .portfolio-box {
   border: 1px solid #4075f0;
   position: relative;
@@ -290,6 +319,20 @@ header.masthead p {
   }
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .popup-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .popup-gallery p {
+    margin: 0 40px;
+  }
+  .project {
+    margin-bottom: 30px;
   }
 }
 

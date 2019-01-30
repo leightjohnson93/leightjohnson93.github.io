@@ -1,4 +1,24 @@
 // Styling for the portfolio section
+.popup-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  justify-content: flex-end;
+  padding: 0 30px 30px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.project p {
+  text-align: justify;
+}
+
 .portfolio-box {
   border: 1px solid $primary;
   position: relative;
@@ -55,5 +75,17 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .popup-gallery {
+    display: flex;
+  }
+  .popup-gallery p {
+    margin: 0 40px;
+  }
+  .project {
+    margin-bottom: 30px;
   }
 }
