@@ -322,14 +322,14 @@ header.masthead p {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 648px) {
   .popup-gallery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .popup-gallery p {
-    margin: 0 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .project {
     margin-bottom: 30px;

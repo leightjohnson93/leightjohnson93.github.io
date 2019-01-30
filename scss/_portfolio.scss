@@ -78,12 +78,10 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 648px) {
   .popup-gallery {
     display: flex;
-  }
-  .popup-gallery p {
-    margin: 0 40px;
+    align-items: center;
   }
   .project {
     margin-bottom: 30px;
