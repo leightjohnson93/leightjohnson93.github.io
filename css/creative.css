@@ -232,10 +232,10 @@ header.masthead p {
 
 .popup-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 30px;
-  grid-row-gap: 30px;
+  grid-row-gap: 50px;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -257,6 +257,8 @@ header.masthead p {
 
 .project p {
   text-align: justify;
+  margin-top: 10px;
+  line-height: 2rem;
 }
 
 .portfolio-box {
